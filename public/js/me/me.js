@@ -2,6 +2,11 @@
  * Created by Administrator on 2016/12/12.
  */
 $(function () {
+    var session =  sessionStorage.getItem("username");
+   // console.log(session);
+    if(session !=null){
+        location.href = './me_login.html';
+    }
    $('#login').on('tap',function () {
        location.href = '../login/login_01.html';
    })

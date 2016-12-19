@@ -16,6 +16,7 @@ $(function () {
     });
     $('.button').on('tap',function () {
         if(flag){
+            sessionStorage.setItem("username", $('input[type=text]').val());
             location.href = "./../me/me_login.html";
         }
     });

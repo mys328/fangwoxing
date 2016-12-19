@@ -10,6 +10,7 @@ body img {
   left: 50%;
   margin-left: -63px;
   top: 26%;
+  opacity: 1;
 }
 body p {
   font-size: 18px;
@@ -19,4 +20,5 @@ body p {
   left: 50%;
   margin-left: -63px;
   color: #5a5a5a;
+  opacity: 1;
 }

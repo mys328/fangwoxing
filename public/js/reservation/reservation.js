@@ -4,9 +4,10 @@
 var itemLgs = $('.items').length,i=0;
 for(;i<itemLgs;i++){
     $('.items').eq(i).on({'swipeLeft':function () {
-        $(this).css('margin-left','-86px').css('transition','0.2s');
+        $('.items').css('margin-left',0).css('transition','0.5s');
+        $(this).css('margin-left','-86px').css('transition','0.5s');
     },'swipeRight':function () {
-        $(this).css('margin-left','0').css('transition','0.2s');
+        $(this).css('margin-left','0').css('transition','0.5s');
     }})
 };
 var delLgs = $('.del').length,j=0;
@@ -19,17 +20,16 @@ $('.navbar .li_01').on('tap',function () {
     location.href = '../indexPage/indexPage.html';
 });
 $('.navbar .li_03').on('tap',function () {
-    if($('.more_send').hasClass('active')){
-        $('.more_send').removeClass('active')
-    }else{
-        $('.more_send').addClass('active');
-    }
+    $('.more_send').addClass('active');
 });
 $('.more_send .send_need').on('tap',function () {
     location.href = '../send/send_need.html';
 });
 $('.more_send .send_home').on('tap',function () {
     location.href = '../send/send_home.html';
+});
+$('.more_send .close').on('tap',function () {
+    $(this).parent().removeClass('active');
 });
 $('.navbar .li_04').on('tap',function () {
     location.href = '../message/message.html';

@@ -77,6 +77,8 @@ body {
   box-shadow: inset 0px -5px 5px #efefef;
 }
 .quit {
+  position: relative;
+  z-index: 3;
   text-align: center;
 }
 .confirm {
@@ -89,7 +91,7 @@ body {
   margin-left: -137px;
   background-color: #fff;
   border-radius: 10px;
-  display: none;
+  opacity: 0;
   z-index: 2;
 }
 .confirm .top {

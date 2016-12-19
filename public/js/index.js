@@ -30,17 +30,16 @@ $(function () {
         location.href = '../message/message.html';
     });
     $('.navbar .li_03').on('tap',function () {
-        if($('.more_send').hasClass('active')){
-            $('.more_send').removeClass('active')
-        }else{
-            $('.more_send').addClass('active');
-        }
+        $('.more_send').addClass('active');
     });
     $('.more_send .send_need').on('tap',function () {
        location.href = '../send/send_need.html';
     });
     $('.more_send .send_home').on('tap',function () {
         location.href = '../send/send_home.html';
+    });
+    $('.more_send .close').on('tap',function () {
+       $(this).parent().removeClass('active');
     });
     $('.navbar .li_02').on('tap',function () {
         location.href = '../reservation/reservation.html';
