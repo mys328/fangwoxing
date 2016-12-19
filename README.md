@@ -1,11 +1,12 @@
-项目名：房我行
-下载：git clone https://code.aliyun.com/task2016/Home.git
-进入目录：cd Home
-安装依赖：npm install
-启动项目：node app.js
-访问：http://127.0.0.1:16909
+# 项目名：房我行
+## 查看步骤 
+ - 下载：git clone https://code.aliyun.com/task2016/Home.git
+ - 进入目录：cd Home
+ - 安装依赖：npm install
+ - 启动项目：node app.js
+ - 访问：http://127.0.0.1:16909
 
-公司信息：
+## 公司信息：
 <title>房我行 - 杭州瑞烁网络科技股份有限公司</title>
 <meta name="keywords" content="杭州瑞烁网络科技股份有限公司"/>
 <meta name="description" content="杭州瑞栎网络科技有限公司成立于2015年是一家专注于专业市场电子商务公司
