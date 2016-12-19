@@ -20,7 +20,8 @@ body {
 .title .prev {
   position: absolute;
   top: 0;
-  left: 10px;
+  left: -10px;
+  width: 50px;
 }
 .title .prev img {
   width: 10px;

@@ -359,16 +359,16 @@ a {
 }
 .items .txt .icon {
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   top: 15px;
   right: 10px;
-  background: url("../../public/img/indexPage/collect_icon_nor@2x.png") no-repeat;
-  background-size: 100%;
+  background: url("../../public/img/indexPage/collect_icon_nor@2x.png") no-repeat top right;
+  background-size: 70%;
 }
 .items .txt .icon.active {
   background: url("../../public/img/indexPage/collect_icon_press@2x.png") no-repeat top right;
-  background-size: 100%;
+  background-size: 70%;
 }
 .items .txt .icon_txt {
   position: absolute;
