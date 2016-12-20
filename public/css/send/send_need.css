@@ -27,6 +27,7 @@ body {
   width: 10px;
 }
 .title .prev {
+  left: 5px;
   font-size: 16px;
 }
 .title .next {

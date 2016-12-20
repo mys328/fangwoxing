@@ -30,15 +30,22 @@
 </div>
 </body>
 <script>
-    document.getElementsByClassName('prev')[0].addEventListener('touchstart',function () {
-       window.history.go(-1);
-    });
-    document.getElementsByClassName('next')[0].addEventListener('touchstart',function () {
-        document.getElementsByClassName('mark')[0].style.display = 'block';
-        document.getElementsByClassName('alert')[0].style.display = 'block';
-    });
-    document.getElementsByClassName('bottom')[0].addEventListener('touchstart',function () {
-        location.href = '../index.html';
-    });
+    window.onload = function () {
+        var session =  sessionStorage.getItem("username");
+// console.log(session);
+        if(session == null){
+            location.href = '../login/login_01.html';
+        };
+        document.getElementsByClassName('prev')[0].addEventListener('touchstart',function () {
+            window.history.go(-1);
+        });
+        document.getElementsByClassName('next')[0].addEventListener('touchstart',function () {
+            document.getElementsByClassName('mark')[0].style.display = 'block';
+            document.getElementsByClassName('alert')[0].style.display = 'block';
+        });
+        document.getElementsByClassName('bottom')[0].addEventListener('touchstart',function () {
+            location.href = '../index.html';
+        });
+    }
 </script>
 </html>
