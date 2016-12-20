@@ -118,7 +118,7 @@ $(function () {
         var num1,num2;var winH = $(window).height();var marH = winH - 464;
         $('.select_box li').on('tap',function () {
             num1 = $(this).index();//获取第几个下拉标题
-           // console.log(num1);
+            //console.log(num1);
             $(window).scrollTop(height-80);
             //console.log(winH);
             /*遮罩层*/
@@ -145,19 +145,19 @@ $(function () {
                     if(num1!=4){
                         $('.mark').css('bottom',marH+'px').addClass('active');
                     }
-            }
 
-                _this.removeClass('active');
-                $('.select .select_down').removeClass('height');
-                _this.eq(num1).addClass('active');
-                $('.select .select_down li').removeClass('active');
-                $('.select .select_down').eq(num1).addClass('height');
-                $('.select_down').eq(3).find('.left .txt1').find('li').eq(0).addClass('active');
-                $('.select_down').eq(0).find('.left .txt1').find('li').eq(0).addClass('active');
-                $('.select_down').eq(3).find('.right .txt2').hide();
-                $('.select_down').eq(0).find('.right .txt2').hide();
-                $('.select_down').eq(3).find('.right .txt2').eq(0).show();
-                $('.select_down').eq(0).find('.right .txt2').eq(0).show();
+                    _this.removeClass('active');
+                    $('.select .select_down').removeClass('height');
+                    _this.eq(num1).addClass('active');
+                    $('.select .select_down li').removeClass('active');
+                    $('.select .select_down').eq(num1).addClass('height');
+                    $('.select_down').eq(3).find('.left .txt1').find('li').eq(0).addClass('active');
+                    $('.select_down').eq(0).find('.left .txt1').find('li').eq(0).addClass('active');
+                    $('.select_down').eq(3).find('.right .txt2').hide();
+                    $('.select_down').eq(0).find('.right .txt2').hide();
+                    $('.select_down').eq(3).find('.right .txt2').eq(0).show();
+                    $('.select_down').eq(0).find('.right .txt2').eq(0).show();
+                }
             }
         });
         $('.select .select_down li').on('tap',function () {
