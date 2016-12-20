@@ -26,7 +26,7 @@ $('.more_send .send_need').on('tap',function () {
     location.href = '../send/send_need.html';
 });
 $('.more_send .send_home').on('tap',function () {
-    location.href = '../send/send_home.html';
+    location.href = '../send/issue.html';
 });
 $('.more_send .close').on('tap',function () {
     $(this).parent().removeClass('active');
