@@ -108,7 +108,7 @@ ul {
   content: '';
   position: absolute;
   top: 10px;
-  left: 0px;
+  left: 0;
   width: 6px;
   height: 6px;
   background: #bee949;
@@ -128,7 +128,7 @@ ul {
 }
 .issue_mess .iss_all input {
   width: 72%;
-  border: 0px;
+  border: 0;
   border-bottom: 1px solid #d6d7dc;
   color: #b4b4b4;
   font-size: 14px;
@@ -142,7 +142,7 @@ ul {
   margin-bottom: 15px;
   border-bottom: 1px solid #d6d7dc;
   padding: 10px;
-  padding-right: 0px;
+  padding-right: 0;
   box-sizing: border-box;
   color: #646464;
   font-size: 14px;
@@ -156,7 +156,7 @@ ul {
   content: '';
   position: absolute;
   top: 10px;
-  left: 0px;
+  left: 0;
   width: 6px;
   height: 6px;
   background: #49cde9;
@@ -268,7 +268,7 @@ ul {
   background: #efeff4;
   padding-left: 10px;
   font-size: 14px;
-  font-family: "微软雅黑";
+  resize: none;
   outline: none;
 }
 .iss_buildings .iss_cho .cho_sel {
@@ -306,7 +306,7 @@ ul {
   display: inline-block;
 }
 .iss_buildings .iss_cho .cho_sel_menu .sel_menu .li_line {
-  border: 0px;
+  border: 0;
 }
 .iss_buildings .add_pic {
   position: relative;
@@ -327,15 +327,15 @@ ul {
 }
 .iss_btn {
   position: relative;
-  bottom: 0px;
+  bottom: 0;
   width: 100%;
   background: #fff;
   height: 61px;
 }
 .iss_btn .iss_btn_one {
   display: inline-block;
-  width: 96%;
-  margin-left: 2%;
+  width: 90%;
+  margin-left: 5%;
   border-radius: 4px;
   background: #ea5404;
   height: 40px;
@@ -346,8 +346,8 @@ ul {
 }
 .wipe {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 163%;
   background: rgba(50,50,50,0.5);
@@ -394,6 +394,40 @@ ul {
   line-height: 43px;
   color: #eb5c18;
   display: inline-block;
+}
+.mark {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.2);
+  display: none;
+}
+.alert {
+  position: fixed;
+  width: 70%;
+  height: 114px;
+  left: 15%;
+  top: 50%;
+  margin-top: -57px;
+  border-radius: 10px;
+  background-color: #fff;
+  display: none;
+}
+.alert .top {
+  height: 60px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 60px;
+  border-bottom: 1px solid #f4f4f6;
+}
+.alert .bottom {
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: #ea5404;
+  font-size: 20px;
 }
 @media all and (max-width: 350px) {
   body {

@@ -45,4 +45,11 @@ $(function () {
         $('.iss_cho').eq(2).find('span').eq(1).text(liVal);
         $('.cho_sel_menu').hide();
     });
+    $('.iss_btn').on('tap',function () {
+       $('.mark').show();
+       $('.alert').show();
+    });
+    $('.alert .bottom').on('tap',function () {
+       location.href = '../indexPage/indexPage.html';
+    });
 });

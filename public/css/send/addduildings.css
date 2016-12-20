@@ -53,55 +53,37 @@ input {
   line-height: 42px;
   text-align: center;
 }
-.wipe {
-  position: absolute;
-  top: 0px;
-  left: 0px;
+.mark {
+  position: fixed;
   width: 100%;
   height: 100%;
-  background: rgba(50,50,50,0.5);
+  background: rgba(0,0,0,0.2);
+  top: 0;
+  left: 0;
   display: none;
-  z-index: 2;
 }
-.wipe .wipe_sm {
-  position: absolute;
-  top: 50%;
-  left: 15%;
-  margin-top: -53px;
-  width: 70%;
-  height: 107px;
+.alert {
+  position: fixed;
+  background-color: #fff;
   border-radius: 10px;
-  background: #fff;
-  text-align: center;
+  width: 70%;
+  left: 15%;
+  height: 114px;
+  top: 50%;
+  margin-top: -57px;
+  display: none;
 }
-.wipe .wipe_sm .wipe_sm_p {
+.alert .top {
+  height: 60px;
+  border-bottom: 1px solid #e1e2e6;
   font-size: 12px;
-  width: 100%;
-  height: 63px;
-  line-height: 63px;
-  border-bottom: 1px solid #d6d7dc;
-  display: inline-block;
-  color: #494949;
-}
-.wipe .wipe_sm .cancel {
-  width: 50%;
-  height: 43px;
   text-align: center;
-  line-height: 44px;
-  display: inline-block;
-  float: left;
-  color: #727272;
+  line-height: 60px;
 }
-.wipe .wipe_sm .confirm {
-  width: 49%;
+.alert .bottom {
+  font-size: 20px;
   color: #ea5404;
-  border-left: 1px solid #d6d7dc;
-}
-.wipe .wipe_sm .wipe_one {
-  width: 100%;
-  height: 43px;
+  height: 50px;
+  line-height: 50px;
   text-align: center;
-  line-height: 43px;
-  color: #eb5c18;
-  display: inline-block;
 }
