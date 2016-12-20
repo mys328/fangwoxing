@@ -78,7 +78,6 @@ body {
 }
 .quit {
   position: relative;
-  z-index: 3;
   text-align: center;
 }
 .confirm {
@@ -91,7 +90,7 @@ body {
   margin-left: -137px;
   background-color: #fff;
   border-radius: 10px;
-  opacity: 0;
+  display: none;
   z-index: 2;
 }
 .confirm .top {

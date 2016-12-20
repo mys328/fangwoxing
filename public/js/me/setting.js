@@ -33,16 +33,16 @@ $(function () {
             alert('您已清除缓存');
         }else{
             $('.mark').css('background','rgba(0,0,0,0.2)').css('display','block');
-            $('.confirm').css('opacity',1).css('transition','0.1s');
+            $('.confirm').show();
         }
     });
     $('.confirm .bottom .left').on('tap',function () {
         $('.mark').css('display','none');
-        $('.confirm').css('opacity',0).css('transition','0.1s');
+        $('.confirm').hide();
     });
     $('.confirm .bottom .right').on('tap',function () {
         $('.mark').css('display','none');
-        $('.confirm').css('opacity',0).css('transition','0.1s');
+        $('.confirm').hide();
         $('.items .cookie').text('0M');
     });
 });
