@@ -117,28 +117,36 @@ $(function () {
     });
         var num1,num2;var winH = $(window).height();var marH = winH - 464;
         $('.select_box li').on('tap',function () {
+            num1 = $(this).index();//获取第几个下拉标题
+           // console.log(num1);
             $(window).scrollTop(height-80);
             //console.log(winH);
             /*遮罩层*/
-            if($('.mark').hasClass('active')){
-                $('.mark').css('bottom',marH+'px').removeClass('active');
-            }else{
-                $('.mark').css('bottom',marH+'px').addClass('active');
+            if(num1!=4){
+                if($('.mark').hasClass('active')){
+                    $('.mark').css('bottom',marH+'px').removeClass('active');
+                }else{
+                    $('.mark').css('bottom',marH+'px').addClass('active');
+                }
             }
 
             var _this = $('.select_box li');
-            num1 = $(this).index();//获取第几个下拉标题
-           // console.log(num1);
-            if(_this.eq(num1).hasClass('active')){
-                $('.mark').css('bottom',marH+'px').removeClass('active');
-               // $('.select').css('margin-top',0).css('transition','0.3s');
-                $('.select .select_down').eq(num1).removeClass('height');
-                _this.eq(num1).removeClass('active');
-                if(num1!=3&&num1!=0){
-                    $('.select .select_down li').removeClass('active');
-                }
-            }else{
-                $('.mark').css('bottom',marH+'px').addClass('active');
+
+            if(num1!=4){
+                if(_this.eq(num1).hasClass('active')){
+                    $('.mark').css('bottom',marH+'px').removeClass('active');
+                    // $('.select').css('margin-top',0).css('transition','0.3s');
+                    $('.select .select_down').eq(num1).removeClass('height');
+                    _this.eq(num1).removeClass('active');
+                    if(num1!=3&&num1!=0&&num1!=4){
+                        $('.select .select_down li').removeClass('active');
+                    }
+                }else{
+                    if(num1!=4){
+                        $('.mark').css('bottom',marH+'px').addClass('active');
+                    }
+            }
+
                 _this.removeClass('active');
                 $('.select .select_down').removeClass('height');
                 _this.eq(num1).addClass('active');
