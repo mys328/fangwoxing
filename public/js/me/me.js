@@ -18,5 +18,5 @@ $('.navbar .li_02').on('tap',function () {
     location.href = '../reservation/reservation.html';
 });
 $('.navbar .li_04').on('tap',function () {
-    location.href = '../message/message.html';
+    location.href = '../message/un_message.html';
 });
