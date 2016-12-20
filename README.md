@@ -1,6 +1,6 @@
 # 项目名：房我行
 ## 查看步骤 
- - 下载：git clone https://code.aliyun.com/task2016/Home.git
+ - 下载：git clone git@code.aliyun.com:task2016/Home.git
  - 进入目录：cd Home
  - 安装依赖：npm install
  - 启动项目：node app.js
