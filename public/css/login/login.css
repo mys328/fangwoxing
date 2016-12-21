@@ -5,14 +5,18 @@
 body {
   background-color: #f5eeea;
 }
-body img {
+#loading {
+  opacity: 1;
+  transition: all 2s;
+}
+#loading img {
   position: fixed;
   left: 50%;
   margin-left: -63px;
   top: 26%;
   opacity: 1;
 }
-body p {
+#loading p {
   font-size: 18px;
   display: block;
   position: fixed;
