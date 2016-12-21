@@ -31,11 +31,6 @@
 </body>
 <script>
     window.onload = function () {
-        var session =  sessionStorage.getItem("username");
-// console.log(session);
-        if(session == null){
-            location.href = '../login/login_01.html';
-        };
         document.getElementsByClassName('prev')[0].addEventListener('touchstart',function () {
             window.history.go(-1);
         });

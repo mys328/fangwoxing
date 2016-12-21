@@ -45,6 +45,6 @@ $(function () {
         $(this).parent().removeClass('active');
     });
     $('.navbar .li_05').on('tap',function () {
-        location.href = '../me/me.html';
+        location.href = '../me/me_login.html';
     });
 });

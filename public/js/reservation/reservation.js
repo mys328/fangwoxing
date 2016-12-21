@@ -35,7 +35,7 @@ $('.navbar .li_04').on('tap',function () {
     location.href = '../message/un_message.html';
 });
 $('.navbar .li_05').on('tap',function () {
-    location.href = '../me/me.html';
+    location.href = '../me/me_login.html';
 });
 $('.items').on('tap',function () {
     location.href = './get.html';

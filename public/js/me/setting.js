@@ -7,9 +7,9 @@ $(function () {
     });
     $('.quit').on('tap',function () {
         sessionStorage.removeItem("username");
-        location.href = './me.html';
+        location.href = './me_login.html';
     });
-    var flag = true;;
+    var flag = true;
     $('.button_flag').on('tap',function () {
         if(flag){
             $(this).animate({

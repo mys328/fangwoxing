@@ -36,6 +36,6 @@ $(function () {
         location.href = '../me/me_login.html';
     });
     $('.navbar .lis_05').on('tap',function () {
-        location.href = '../me/me.html';
+        location.href = '../me/me_login.html';
     });
 });

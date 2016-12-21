@@ -2,10 +2,20 @@
  * Created by Administrator on 2016/12/12.
  */
 $(function () {
+    var session =  sessionStorage.getItem("username");
+// console.log(session);
+    if(session != null){
+        $('.login').eq(0).show();
+        $('.login-ed').hide();
+        $('.user-pho').show();
+    }
+    $('#login').on('tap',function () {
+        location.href = '../login/login_01.html';
+    });
    $('.setting').on('tap',function () {
        location.href = './setting.html';
    });
-   $('.login').on('tap',function () {
+   $('#changeMe').on('tap',function () {
       location.href = './meData.html';
    });
    $('#lis_01 .right').on('tap',function () {
