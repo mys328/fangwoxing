@@ -27,7 +27,7 @@ $(function () {
         location.href = '../me/me_login.html';
     });
     $('.navbar .li_04').on('tap',function () {
-        location.href = '../message/un_message.html';
+        location.href = '../message/message.html';
     });
     $('.navbar .li_03').on('tap',function () {
         $('.more_send').addClass('active');

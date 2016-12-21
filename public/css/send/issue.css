@@ -19,14 +19,16 @@ ul {
   font-size: 16px;
   text-align: center;
   background-color: #fff;
-  position: relative;
+  position: fixed;
+  top: 0;
   line-height: 40px;
   font-family: "微软雅黑";
+  z-index: 5;
 }
 .iss_head .cha_cancel {
   width: 50px;
   position: absolute;
-  left: 0;
+  left: 10px;
   font-size: 14px;
   color: #323232;
 }

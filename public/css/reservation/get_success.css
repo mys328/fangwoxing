@@ -29,6 +29,7 @@ body {
 }
 .title .prev {
   font-size: 14px;
+  text-align: right;
 }
 .title .next {
   position: absolute;

@@ -24,6 +24,30 @@ $(function () {
     $('#lis_02 .right').on('tap',function () {
         location.href = './mySend.html';
     });
+    $('.navbar .li_03').on('tap',function () {
+        $('.more_send').addClass('active');
+    });
+    $('.more_send .send_need').on('tap',function () {
+        var session =  sessionStorage.getItem("username");
+// console.log(session);
+        if(session == null){
+            location.href = '../login/login_01.html';
+        }else{
+            location.href = '../send/send_need.html';
+        }
+    });
+    $('.more_send .send_home').on('tap',function () {
+        var session =  sessionStorage.getItem("username");
+// console.log(session);
+        if(session == null){
+            location.href = '../login/login_01.html';
+        }else{
+            location.href = '../send/issue.html';
+        }
+    });
+    $('.more_send .close').on('tap',function () {
+        $(this).parent().removeClass('active');
+    });
    $('#txt_01').on('tap',function () {
        location.href = './collection.html';
    });
