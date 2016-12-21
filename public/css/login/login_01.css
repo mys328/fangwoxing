@@ -18,8 +18,10 @@ body .login_top {
 }
 body .login_top .prev {
   position: absolute;
+  width: 50px;
+  height: 100%;
   top: 0;
-  left: 10px;
+  left: -10px;
 }
 body .login_top .prev img {
   width: 10px;

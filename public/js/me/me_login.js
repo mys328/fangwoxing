@@ -5,7 +5,7 @@ $(function () {
    $('.setting').on('tap',function () {
        location.href = './setting.html';
    });
-   $('#changeMe').on('tap',function () {
+   $('.login').on('tap',function () {
       location.href = './meData.html';
    });
    $('#lis_01 .right').on('tap',function () {

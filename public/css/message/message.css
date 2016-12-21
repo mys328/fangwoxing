@@ -128,7 +128,6 @@ body {
 .message_items .txt p {
   display: block;
   height: 30px;
-  overflow: hidden;
 }
 .message_items .date {
   position: absolute;

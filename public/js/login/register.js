@@ -55,13 +55,13 @@ $(function () {
         }
     });
     $('#human').on('tap',function () {
-       $('.select_human').css('opacity',1).css('transition','0.5s');
+       $('.select_human').show();
     });
     var lisLg = $('.select_human li').length;
     for(var i=0;i<lisLg;i++){
         $('.select_human li').eq(i).on('tap',function () {
             $('#ipt5').val($(this).text());
-            $(this).parent().css('opacity',0).css('transition','0.5s');
+            $(this).parent().hide();
             $('.select img').addClass('arrow_rotate');
         })
     }

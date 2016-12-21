@@ -25,7 +25,7 @@ $(function () {
             })
         }
     });
-    $('#about').on('tap',function () {
+    $('.about').on('tap',function () {
         location.href = './about.html';
     });
     $('.click').on('tap',function () {

@@ -37,33 +37,37 @@
 <script src="../../public/js/touch.js"></script>
 </body>
 <script>
-    var flag;
+    $(function () {
+        $('.register_top .prev').on('tap',function () {
+           window.history.go(-1);
+        });
+        var flag;
+        $('input').blur(function () {
+            var ipt1 = $('#ipt1').val();
+            var ipt2 = $('#ipt2').val();
+            var ipt3 = $('#ipt3').val();
+            var ipt4 = $('#ipt4').val();
+            var ipt5 = $('#ipt5').val();
+            if(ipt1!=''&&ipt2!=''&&ipt3!=''&&ipt4!=''&&ipt5!=''){
+                $('.done').css('background-color','#EA5404');
+                flag = true;
+            }
+        });
+        $('.done').on('tap',function () {
 
-    $('input').blur(function () {
-        var ipt1 = $('#ipt1').val();
-        var ipt2 = $('#ipt2').val();
-        var ipt3 = $('#ipt3').val();
-        var ipt4 = $('#ipt4').val();
-        var ipt5 = $('#ipt5').val();
-        if(ipt1!=''&&ipt2!=''&&ipt3!=''&&ipt4!=''&&ipt5!=''){
-            $('.done').css('background-color','#EA5404');
-            flag = true;
-        }
+            if(flag){
+                $('.register_top').hide();
+                $('.must').hide();
+                $('.not_must').hide();
+                $('p').hide();
+                $('.done').hide();
+                $('body').css('background-color','#B2B2B2');
+                $('.registerDone').show();
+            }
+        });
+        $('.registerDone .ok').on('tap',function () {
+            location.href = './login_01.html'
+        });
     });
-    $('.done').on('touchstart',function () {
-
-        if(flag){
-            $('.register_top').fadeOut(500);
-            $('.must').fadeOut(500);
-            $('.not_must').fadeOut(500);
-            $('p').fadeOut(500);
-            $('.done').fadeOut(500);
-            $('body').css('background-color','#B2B2B2');
-            $('.registerDone').fadeIn(500);
-        }
-    });
-    $('.registerDone .ok').on('touchstart',function () {
-        location.href = './login_01.html'
-    })
 </script>
 </html>
