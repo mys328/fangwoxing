@@ -58,10 +58,22 @@ $(function () {
         $('.more_send').addClass('active');
     });
     $('.more_send .send_need').on('tap',function () {
-        location.href = '../send/send_need.html';
+        var session =  sessionStorage.getItem("username");
+// console.log(session);
+        if(session == null){
+            location.href = '../login/login_01.html';
+        }else{
+            location.href = '../send/send_need.html';
+        }
     });
     $('.more_send .send_home').on('tap',function () {
-        location.href = '../send/issue.html';
+        var session =  sessionStorage.getItem("username");
+// console.log(session);
+        if(session == null){
+            location.href = '../login/login_01.html';
+        }else{
+            location.href = '../send/issue.html';
+        }
     });
     $('.more_send .close').on('tap',function () {
         $(this).parent().removeClass('active');
