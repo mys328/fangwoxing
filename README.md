@@ -1,7 +1,7 @@
 # 项目名：房我行
 ## 查看步骤 
  - 下载：git clone https://github.com/woxiaofan/Room.git
- - 进入目录：cd Home
+ - 进入目录：cd Room
  - 安装依赖：npm install
  - 启动项目：node app.js
  - 访问：http://127.0.0.1:16909
