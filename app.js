@@ -27,10 +27,21 @@ app.use('/weixin',function (req,res) {
 });
 app.use('/api',proxy({
     target:'http://122.10.30.153:9901',
-    pathRewriter:{
+    pathRewrite:{
         '^/api':'/'
     }
 }));
+/*
+app.use('/api',proxy({
+    target:'http://guanjp.com:9805',
+    changeOrigin:true,
+    ws:true,
+    cookieRewrite:true,
+    pathRewrite:{
+        '^/api':'/'
+    }
+}));*/
+
 
 //指定访问页面路径
 app.use('/',express.static(path.join(__dirname,'views')));
